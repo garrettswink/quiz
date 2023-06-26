@@ -68,8 +68,8 @@ button {
   border-radius: 1.8em;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 0.7em 1.8em
+  justify-content: space-between;
+  padding: 0.7em 1.8em;
 }
 
 .question {
@@ -77,4 +77,41 @@ button {
   font-weight: 600;
 
 }
-/* 6:56 */
+
+.options-div:disabled{
+  color:black;
+  cursor: not-allowed;
+}
+
+#next-button{
+  font-size: 1em;
+  margin-top: 1.5em;
+  background-color: #1d2630;
+  color: #fff;
+  padding: 0.7em 1.8em;
+  border-radius: 0.3em;
+  float: right;
+  box-shadow: 0px 20px 40px rgba(0,0,0,0.3);
+}
+
+.hide{
+  display: none;
+}
+
+.incorrect{
+  background-color: #ffdde0;
+  color: red;
+  border-color: #d32f2f;
+}
+
+/* Souce has .incorrect written twice with slightly different colors.
+Seemed wrong to me. You can find this at 09:31, if it turns out not to be a mistake
+Remove this comment before final submission. */
+
+#user-score{
+  font-size: 1.5em;
+  color: #fff;
+}
+
+
+
