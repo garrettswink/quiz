@@ -13,7 +13,7 @@ let scoreCount = 0;
 let count = 11;
 let countdown;
 
-// Quiz Array
+// Quiz Questions
 const quizArray = [
     {
         id: "0",
@@ -52,10 +52,10 @@ const quizArray = [
         id: "3",
         question: "Which of the following is truthy",
         options: [
-            "Bananas are clones",
+            "If X than Y",
             "0",
-            "False is True, man",
-            "Mac is Better than PC",
+            "False",
+            "Mac is better than PC",
         ]
     },
     {
@@ -66,6 +66,22 @@ const quizArray = [
             "JavaScript doesn't use variables",
             "A container that holds a value",
             "The part of the code that does the thing",
-        ]
-    }
-]
+        ],
+    },
+];
+
+restart.addEventListener("click", () => {
+    initial();
+    displayContainer.classList.remove("hide");
+    scoreContainer.classList.add("hide");
+});
+
+if(questionCount == quizArray.length){
+    displayContainer.classList.add("hide");
+    scoreContainer.classList.remove('hide')
+
+
+}
+
+
+
